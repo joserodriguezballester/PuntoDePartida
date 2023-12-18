@@ -1,4 +1,4 @@
-package com.example.esqueleto.remote.modelsResponses
+package com.example.esqueleto.data.modelsResponses
 
 data class Pokemon(
     val effect_changes: List<EffectChange>,

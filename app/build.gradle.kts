@@ -69,6 +69,12 @@ dependencies {
     implementation(libs.okhttp)
     implementation(libs.logging.interceptor)
 
+    // Coil
+    implementation(libs.coil.compose)
+
+  //  implementation ("com.google.accompanist:accompanist-coil:0.7.0")
+
+
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.test.ext.junit)

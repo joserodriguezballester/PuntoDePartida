@@ -20,12 +20,12 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
 
         val service = RetrofitApiFactory.provideRetrofitApi()
-
+        val repository=RetrofitApiFactory.provideRepository()
         lifecycleScope.launch {
             val myPokemonList = service.getPokemonList(0, 0)
             Log.i("MyTag", myPokemonList.toString())
         }
-
+        Log.i("MyTag", "repo $repository")
         setContent {
             NavegacionBasicaTheme {
                 // A surface container using the 'background' color from the theme
@@ -35,8 +35,8 @@ class MainActivity : ComponentActivity() {
                 ) {
 
                     val navController = rememberNavController()
-                    AppNavigation(navController = navController)
-
+                //    AppNavigation(navController = navController)
+                    AppNavigation(navController = navController,repository)
                     //    Greeting("Android")
                 }
             }
