@@ -69,6 +69,15 @@ dependencies {
     implementation(libs.okhttp)
     implementation(libs.logging.interceptor)
 
+    // Coil
+    implementation(libs.coil.compose)
+  //  implementation ("com.google.accompanist:accompanist-coil:0.7.0")
+
+    implementation("androidx.palette:palette:1.0.0")
+// Get Palette by Coil
+    implementation ("com.github.satoshun.compose.palette:coil:0.0.2")
+    // Timber
+    implementation ("com.jakewharton.timber:timber:4.7.1")
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.test.ext.junit)

@@ -14,17 +14,19 @@ import com.example.esqueleto.di.RetrofitApiFactory
 import com.example.esqueleto.navigation.AppNavigation
 import com.example.esqueleto.ui.theme.NavegacionBasicaTheme
 import kotlinx.coroutines.launch
+import timber.log.Timber
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         val service = RetrofitApiFactory.provideRetrofitApi()
-
+        val repository=RetrofitApiFactory.provideRepository()
         lifecycleScope.launch {
             val myPokemonList = service.getPokemonList(0, 0)
             Log.i("MyTag", myPokemonList.toString())
         }
+        Log.i("MyTag", "repo $repository")
 
         setContent {
             NavegacionBasicaTheme {
@@ -35,8 +37,8 @@ class MainActivity : ComponentActivity() {
                 ) {
 
                     val navController = rememberNavController()
-                    AppNavigation(navController = navController)
-
+                //    AppNavigation(navController = navController)
+                    AppNavigation(navController = navController,repository)
                     //    Greeting("Android")
                 }
             }

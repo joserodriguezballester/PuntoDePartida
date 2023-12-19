@@ -1,4 +1,4 @@
-package com.example.esqueleto.remote.modelsResponses
+package com.example.esqueleto.data.modelsResponses
 
 data class FlavorTextEntry(
     val flavor_text: String,
