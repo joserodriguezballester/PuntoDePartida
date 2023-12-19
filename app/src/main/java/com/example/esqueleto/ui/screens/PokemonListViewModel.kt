@@ -1,9 +1,14 @@
 package com.example.esqueleto.ui.screens
 
+import android.graphics.Bitmap
+import android.graphics.drawable.BitmapDrawable
+import android.graphics.drawable.Drawable
 import android.util.Log
 import androidx.compose.runtime.mutableStateOf
+import androidx.compose.ui.graphics.Color
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import androidx.palette.graphics.Palette
 import com.example.esqueleto.Utils.Constants.PAGE_SIZE
 import com.example.esqueleto.Utils.Resource
 import com.example.esqueleto.api.Repository
@@ -25,6 +30,7 @@ class PokemonListViewModel(private val repository: Repository) : ViewModel() {
     init {
         Log.i("MyTag", "viewModel $repository")
         loadPokemonPaginated()
+
     }
 
     fun loadPokemonPaginated() {
@@ -65,15 +71,15 @@ class PokemonListViewModel(private val repository: Repository) : ViewModel() {
         }
     }
 
-//    fun calcDominantColor(drawable: Drawable, onFinish: (Color) -> Unit) {
-//        val bmp = (drawable as BitmapDrawable).bitmap.copy(Bitmap.Config.ARGB_8888, true)
-//
-//        Palette.from(bmp).generate { palette ->
-//            palette?.dominantSwatch?.rgb?.let { colorValue ->
-//                onFinish(Color(colorValue))
-//            }
-//        }
-//    }
+    fun calcDominantColor(drawable: Drawable, onFinish: (Color) -> Unit) {
+        val bmp = (drawable as BitmapDrawable).bitmap.copy(Bitmap.Config.ARGB_8888, true)
+
+        Palette.from(bmp).generate { palette ->
+            palette?.dominantSwatch?.rgb?.let { colorValue ->
+                onFinish(Color(colorValue))
+            }
+        }
+    }
 }
 
 

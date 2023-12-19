@@ -14,6 +14,7 @@ import com.example.esqueleto.di.RetrofitApiFactory
 import com.example.esqueleto.navigation.AppNavigation
 import com.example.esqueleto.ui.theme.NavegacionBasicaTheme
 import kotlinx.coroutines.launch
+import timber.log.Timber
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -26,6 +27,7 @@ class MainActivity : ComponentActivity() {
             Log.i("MyTag", myPokemonList.toString())
         }
         Log.i("MyTag", "repo $repository")
+
         setContent {
             NavegacionBasicaTheme {
                 // A surface container using the 'background' color from the theme

@@ -9,38 +9,12 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="531cafb9-70e3-4338-bdf9-40fe80ceee38" name="Changes" comment="iniciando">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/esqueleto/Utils/Resource.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/esqueleto/api/Repository.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/esqueleto/data/models/PokedexListEntry.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/esqueleto/ui/screens/PokemonListScreen.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/esqueleto/ui/screens/PokemonListViewModel.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_international_pok_mon_logo.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/MyPokemon.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="531cafb9-70e3-4338-bdf9-40fe80ceee38" name="Changes" comment="Mostrando pokemons">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/esqueleto/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/esqueleto/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/esqueleto/Utils/Constants.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/esqueleto/Utils/Constants.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/esqueleto/api/RetrofitApi.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/esqueleto/api/RetrofitApi.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/esqueleto/di/RetrofitApiFactory.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/esqueleto/di/RetrofitApiFactory.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/esqueleto/navigation/AppNavigation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/esqueleto/navigation/AppNavigation.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/esqueleto/navigation/Routes.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/esqueleto/navigation/Routes.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/esqueleto/remote/modelsResponses/EffectChange.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/esqueleto/data/modelsResponses/EffectChange.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/esqueleto/remote/modelsResponses/EffectEntry.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/esqueleto/data/modelsResponses/EffectEntry.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/esqueleto/remote/modelsResponses/EffectEntryX.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/esqueleto/data/modelsResponses/EffectEntryX.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/esqueleto/remote/modelsResponses/FlavorTextEntry.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/esqueleto/data/modelsResponses/FlavorTextEntry.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/esqueleto/remote/modelsResponses/Generation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/esqueleto/data/modelsResponses/Generation.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/esqueleto/remote/modelsResponses/Language.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/esqueleto/data/modelsResponses/Language.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/esqueleto/remote/modelsResponses/Name.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/esqueleto/data/modelsResponses/Name.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/esqueleto/remote/modelsResponses/Pokemon.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/esqueleto/data/modelsResponses/Pokemon.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/esqueleto/remote/modelsResponses/PokemonList.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/esqueleto/data/modelsResponses/PokemonList.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/esqueleto/remote/modelsResponses/PokemonX.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/esqueleto/data/modelsResponses/PokemonX.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/esqueleto/remote/modelsResponses/PokemonXX.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/esqueleto/data/modelsResponses/PokemonXX.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/esqueleto/remote/modelsResponses/Result.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/esqueleto/data/modelsResponses/Result.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/esqueleto/remote/modelsResponses/VersionGroup.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/esqueleto/data/modelsResponses/VersionGroup.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/libs.versions.toml" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/libs.versions.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/esqueleto/ui/screens/PokemonListScreen.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/esqueleto/ui/screens/PokemonListScreen.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/esqueleto/ui/screens/PokemonListViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/esqueleto/ui/screens/PokemonListViewModel.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -229,7 +203,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702579434561</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Mostrando pokemons">
+      <option name="closed" value="true" />
+      <created>1702923663984</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1702923663984</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -246,6 +228,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="iniciando1" />
     <MESSAGE value="iniciando" />
-    <option name="LAST_COMMIT_MESSAGE" value="iniciando" />
+    <MESSAGE value="Mostrando pokemons" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mostrando pokemons" />
   </component>
 </project>
