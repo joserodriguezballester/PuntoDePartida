@@ -24,7 +24,7 @@ fun Greeting2(name: String, modifier: Modifier = Modifier, navController: NavHos
         text = "Hello $name!",
         modifier = modifier
           .clickable {
-            navController.navigate(Routes.DetailScreen.route)
+       //     navController.navigate(Routes.DetailScreen.route)
         }
     )
 

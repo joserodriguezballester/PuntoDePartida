@@ -1,4 +1,4 @@
-package com.example.esqueleto.ui.screens
+package com.example.esqueleto.ui.screens.pokemonList
 
 import android.graphics.Bitmap
 import android.graphics.drawable.BitmapDrawable
@@ -13,12 +13,15 @@ import com.example.esqueleto.Utils.Constants.PAGE_SIZE
 import com.example.esqueleto.Utils.Resource
 import com.example.esqueleto.api.Repository
 import com.example.esqueleto.data.models.PokedexListEntry
+
 import kotlinx.coroutines.launch
-import java.util.Locale
 
-class PokemonListViewModel(private val repository: Repository) : ViewModel() {
 
-   // val repository = repository
+
+class PokemonListViewModel constructor
+    (private val repository: Repository) : ViewModel() {
+
+    // val repository = repository
 
     private var curPage = 0
 
@@ -41,8 +44,8 @@ class PokemonListViewModel(private val repository: Repository) : ViewModel() {
             when (result) {
 
                 is Resource.Success -> {
-                    Log.i("MyTag", "Resource.Success")
-                    Log.i("MyTag", "datos ${result.data.toString()}")
+                 //   Log.i("MyTag", "Resource.Success")
+                //    Log.i("MyTag", "datos ${result.data.toString()}")
                     endReached.value = curPage * PAGE_SIZE >= result.data!!.count
                     val pokedexEntries = result.data.results.mapIndexed { index, entry ->
 
@@ -67,6 +70,8 @@ class PokemonListViewModel(private val repository: Repository) : ViewModel() {
                     loadError.value = result.message!!
                     isLoading.value = false
                 }
+
+                is Resource.Loading -> TODO()
             }
         }
     }

@@ -3,6 +3,7 @@ package com.example.esqueleto.api
 import com.example.esqueleto.Utils.Resource
 import com.example.esqueleto.data.modelsResponses.Pokemon
 import com.example.esqueleto.data.modelsResponses.PokemonList
+import com.example.esqueleto.data.response.Pokemon2
 import retrofit2.http.GET
 import retrofit2.http.Path
 import retrofit2.http.Query
@@ -22,7 +23,7 @@ interface RetrofitApi {
     @GET("pokemon/{name}")
     suspend fun getPokemonInfo(
         @Path("name") name: String
-    ): Pokemon
+    ): Pokemon2
 
 
 }

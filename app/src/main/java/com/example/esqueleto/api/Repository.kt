@@ -3,6 +3,7 @@ package com.example.esqueleto.api
 import com.example.esqueleto.Utils.Resource
 import com.example.esqueleto.data.modelsResponses.Pokemon
 import com.example.esqueleto.data.modelsResponses.PokemonList
+import com.example.esqueleto.data.response.Pokemon2
 
 class Repository(val apiService: RetrofitApi) {
 
@@ -15,7 +16,7 @@ class Repository(val apiService: RetrofitApi) {
         return Resource.Success(response)
     }
 
-    suspend fun getPokemonInfo(pokemonName: String): Resource<Pokemon> {
+    suspend fun getPokemonInfo(pokemonName: String): Resource<Pokemon2> {
         val response = try {
             apiService.getPokemonInfo(pokemonName)
         } catch (e: Exception) {

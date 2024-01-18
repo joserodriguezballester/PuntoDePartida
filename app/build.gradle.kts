@@ -2,6 +2,10 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.kotlinAndroid)
+// hilt
+//    kotlin("kapt")
+//    id("com.google.dagger.hilt.android")
+//    id("dagger.hilt.android.plugin")
 }
 
 android {
@@ -48,6 +52,7 @@ android {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
     }
+
 }
 
 dependencies {
@@ -60,6 +65,10 @@ dependencies {
     implementation(libs.ui.graphics)
     implementation(libs.ui.tooling.preview)
     implementation(libs.material3)
+
+    // ViewModel Compose
+    implementation ("androidx.lifecycle:lifecycle-viewmodel-compose:2.4.1")
+
     // Navegacion
     implementation (libs.androidx.navigation.compose)
 
@@ -71,6 +80,7 @@ dependencies {
 
     // Coil
     implementation(libs.coil.compose)
+   // implementation ("io.coil-kt:coil-compose:1.4.0")
   //  implementation ("com.google.accompanist:accompanist-coil:0.7.0")
 
     implementation("androidx.palette:palette:1.0.0")
@@ -78,6 +88,22 @@ dependencies {
     implementation ("com.github.satoshun.compose.palette:coil:0.0.2")
     // Timber
     implementation ("com.jakewharton.timber:timber:4.7.1")
+
+    //Hilt
+//    implementation(libs.hilt.android)
+//    kapt(libs.hilt.android.compiler)
+//    implementation (libs.androidx.hilt.navigation.compose)
+
+
+    //Dagger - Hilt
+  //  implementation ("com.google.dagger:hilt-android:2.40.5")
+  //  kapt ("com.google.dagger:hilt-android-compiler:2.40.5")
+  //  implementation (libs.androidx.hilt.lifecycle.viewmodel)
+  //  kapt ("androidx.hilt:hilt-compiler:1.1.0")
+  //  implementation (libs.androidx.hilt.navigation.compose)
+
+
+
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.test.ext.junit)
@@ -87,3 +113,7 @@ dependencies {
     debugImplementation(libs.ui.tooling)
     debugImplementation(libs.ui.test.manifest)
 }
+// Allow references to generated code
+//kapt {
+//    correctErrorTypes = true
+//}

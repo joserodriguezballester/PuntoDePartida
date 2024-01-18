@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.activity.viewModels
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
@@ -12,9 +13,11 @@ import androidx.lifecycle.lifecycleScope
 import androidx.navigation.compose.rememberNavController
 import com.example.esqueleto.di.RetrofitApiFactory
 import com.example.esqueleto.navigation.AppNavigation
+import com.example.esqueleto.ui.screens.pokemonList.PokemonListViewModel
 import com.example.esqueleto.ui.theme.NavegacionBasicaTheme
 import kotlinx.coroutines.launch
-import timber.log.Timber
+
+//import androidx.hilt.navigation.compose.hiltViewModel
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -27,7 +30,7 @@ class MainActivity : ComponentActivity() {
             Log.i("MyTag", myPokemonList.toString())
         }
         Log.i("MyTag", "repo $repository")
-
+        val viewModel: PokemonListViewModel by viewModels()
         setContent {
             NavegacionBasicaTheme {
                 // A surface container using the 'background' color from the theme
@@ -35,7 +38,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-
+                 //   val viewModel = hiltViewModel<PokemonListViewModel>()
                     val navController = rememberNavController()
                 //    AppNavigation(navController = navController)
                     AppNavigation(navController = navController,repository)
